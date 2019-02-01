@@ -30,6 +30,8 @@ public class AccountDAO {
             con = (HttpURLConnection) url.openConnection();
             con.setDoOutput(true);
             con.setRequestMethod("GET");
+            con.setRequestProperty("identity", "O4");
+            con.setRequestProperty("token", "aa9a045b-4279-4d49-b099-d322a2eaecac");
 
             // Set Parameters in URL
             tokenUrl = new StringBuilder();
