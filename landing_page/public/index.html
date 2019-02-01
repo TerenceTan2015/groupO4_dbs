@@ -39,23 +39,15 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
 	<div className="container">
-	<html>
-<head>  
+	<head>  
 <script>
 window.onload = function () {
 
-var chart = new CanvasJS.Chart("chartContainer", {
+var chart1 = new CanvasJS.Chart("chartContainer1", {
 	animationEnabled: true,
 	title:{
 		text: "Financial Overview"
 	},	
-	axisY: {
-		title: "Expenditure and balances",
-		titleFontColor: "#4F81BC",
-		lineColor: "#4F81BC",
-		labelFontColor: "#4F81BC",
-		tickColor: "#4F81BC"
-	},
 	toolTip: {
 		shared: true
 	},
@@ -66,34 +58,68 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	data: [{
 		type: "column",
 		name: "Balance",
+        click: onClick,
 		legendText: "Balance",
+        name: "Balance",
 		showInLegend: true, 
 		dataPoints:[
-			{ label: "Jan", y: 266.21 },
-			{ label: "Feb", y: 302.25 },
-			{ label: "March", y: 157.20 },
-			{ label: "April", y: 148.77 },
-			{ label: "May", y: 101.50 },
-			{ label: "June", y: 97.8 }
+			{ label: "Sep", y: 18869.07 },
+			{ label: "Oct", y: 20569.52 },
+			{ label: "Nov", y: 21559.53 },
+			{ label: "Dec", y: 23251.6 },
+			{ label: "Jan", y: 25292.88 },
+			{ label: "Feb", y: 25292.88 }
 		]
 	},
 	{
 		type: "column",	
 		name: "Expenses",
 		legendText: "Expenses",
-		axisYType: "secondary",
+        name: "Expenses",
 		showInLegend: true,
 		dataPoints:[
-			{ label: "Jan", y: 10.46 },
-			{ label: "Feb", y: 2.27 },
-			{ label: "March", y: 3.99 },
-			{ label: "April", y: 4.45 },
-			{ label: "May", y: 2.92 },
-			{ label: "June", y: 3.1 }
+			{ label: "Sep", y: 1322.80 },
+			{ label: "Oct", y: 2322.80 },
+			{ label: "Nov", y: 922.80 },
+			{ label: "Dec", y: 822.80 },
+			{ label: "Jan", y: 1922.80 },
+			{ label: "Feb", y: 0 }
 		]
 	}]
 });
-chart.render();
+
+chart1.render();
+
+
+var chart2 = new CanvasJS.Chart("chartContainer2", {
+	exportEnabled: true,
+	animationEnabled: true,
+	title:{
+		text: "Transaction Details"
+	},
+	legend:{
+		cursor: "pointer",
+		itemclick: explodePie
+	},
+	data: [{
+		type: "pie",
+		showInLegend: true,
+		toolTipContent: "{name}: <strong>{y}%</strong>",
+		indexLabel: "{name} - {y}%",
+		dataPoints: [
+			{ y: 35, name: "F&B", exploded: true },
+			{ y: 20, name: "Transport" },
+			{ y: 20, name: "Transfer" },
+			{ y: 25, name: "ATM" },
+		]
+	}]
+});
+
+chart2.render();
+
+function onClick(e) {
+		chart2.render();
+	}
 
 function toggleDataSeries(e) {
 	if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
@@ -102,17 +128,29 @@ function toggleDataSeries(e) {
 	else {
 		e.dataSeries.visible = true;
 	}
-	chart.render();
+	chart1.render();
+}
+
+function explodePie (e) {
+	if(typeof (e.dataSeries.dataPoints[e.dataPointIndex].exploded) === "undefined" || !e.dataSeries.dataPoints[e.dataPointIndex].exploded) {
+		e.dataSeries.dataPoints[e.dataPointIndex].exploded = true;
+	} else {
+		e.dataSeries.dataPoints[e.dataPointIndex].exploded = false;
+	}
+	e.chart2.render();
+
 }
 
 }
 </script>
 </head>
-<body style="background-color: black">
-<div id="chartContainer" style="height: 370px; width: 1000px; margin: auto"></div>
+<body>
+<div style="width: 1000px; margin: auto; background-color:white; height: 370px;">
+<div id="chartContainer1" style="height: 370px; width: 50%;float: left"></div>
 <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<div id="chartContainer2" style="height: 370px; width: 50%;float: right"></div>
+</div>
 </body>
-</html>
 	</div>
   </body>
 </html>

@@ -11,7 +11,7 @@ constructor(props) {
   }
 render() {
     return (<div className="comptext">
-    <h3>Favourites</h3>
+    <div className="title">Favourites</div>
       {this.props.displaytext}
 	  <div class="icon-bar">
 <a class="active" href="#"><img src={qr} width="50" height="50"></img></a> 

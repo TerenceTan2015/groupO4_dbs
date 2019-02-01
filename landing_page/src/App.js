@@ -4,12 +4,17 @@ import './App.css';
 import FirstComponent from './FirstComponent'
 import CustomizableApps from './CustomizableApps'
 import DataVisualization from './DataVisualization'
+import NavBar from './NavBar'
 class App extends Component {
   render() {
     return (
       <div className="App">
-		<div className="container">
-		<FirstComponent displaytext="Header goes here"/>
+		<div>
+		<FirstComponent displaytext=""/>
+		</div>
+		
+		<div className="container-black">
+		<NavBar displaytext=""/>
 		</div>
 		
 		<div className="container">

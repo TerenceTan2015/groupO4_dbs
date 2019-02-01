@@ -39,9 +39,27 @@
   padding-bottom: 15px;
 }
 
+.container-black {
+  margin: auto;
+  background-color: black;
+  width: 1000px;
+  padding-bottom: 15px;
+}
+
+.title {
+	font-family: Calibri;
+	font-size: 28px;
+}
+
 .icon-bar {
   width: 100%; /* Full-width */
   background-color: white; /* Dark-grey background */
+  overflow: auto; /* Overflow due to float */
+}
+
+.icon-bar-2 {
+  width: 100%; /* Full-width */
+  background-color: black; /* Dark-grey background */
   overflow: auto; /* Overflow due to float */
 }
 
@@ -51,8 +69,8 @@
   width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
   padding: 12px 0; /* Some top and bottom padding */
   transition: all 0.3s ease; /* Add transition for hover effects */
-  color: white; /* White text color */
-  font-size: 36px; /* Increased font size */
+  color: black; /* White text color */
+  font-size: 22px; /* Increased font size */
 }
 
 .icon-bar a:hover {
