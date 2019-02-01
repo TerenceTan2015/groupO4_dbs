@@ -4,46 +4,46 @@ import java.util.*;
 
 public class Customer {
     private String name;
-    private String customerId;
+    private int custId;
     private String dateOfBirth;
     private ArrayList<Account> accounts;
 
-    public Customer(String name, String customerId, String dateOfBirth, ArrayList<Account> accounts) {
-        this.name = name;
-        this.customerId = customerId;
-        this.dateOfBirth = dateOfBirth;
-        this.accounts = accounts;
+    public Customer(String name, int custId, String dateOfBirth, ArrayList<Account> accounts) {
+	this.name = name;
+	this.custId = custId;
+	this.dateOfBirth = dateOfBirth;
+	this.accounts = accounts;
     }
 
     public String getName() {
-        return name;
+	return name;
     }
 
     public void setName(String name) {
-        this.name = name;
+	this.name = name;
     }
 
-    public String getCustomerId() {
-        return customerId;
+    public int getCustId() {
+	return custId;
     }
 
-    public void setCustomerId(String customerId) {
-        this.customerId = customerId;
+    public void setCustId(int custId) {
+	this.custId = custId;
     }
 
     public String getDateOfBirth() {
-        return dateOfBirth;
+	return dateOfBirth;
     }
 
     public void setDateOfBirth(String dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
+	this.dateOfBirth = dateOfBirth;
     }
 
     public ArrayList<Account> getAccounts() {
-        return accounts;
+	return accounts;
     }
 
     public void setAccounts(ArrayList<Account> accounts) {
-        this.accounts = accounts;
+	this.accounts = accounts;
     }
 }
