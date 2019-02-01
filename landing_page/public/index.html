@@ -38,5 +38,81 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+	<div className="container">
+	<html>
+<head>  
+<script>
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	title:{
+		text: "Financial Overview"
+	},	
+	axisY: {
+		title: "Expenditure and balances",
+		titleFontColor: "#4F81BC",
+		lineColor: "#4F81BC",
+		labelFontColor: "#4F81BC",
+		tickColor: "#4F81BC"
+	},
+	toolTip: {
+		shared: true
+	},
+	legend: {
+		cursor:"pointer",
+		itemclick: toggleDataSeries
+	},
+	data: [{
+		type: "column",
+		name: "Balance",
+		legendText: "Balance",
+		showInLegend: true, 
+		dataPoints:[
+			{ label: "Jan", y: 266.21 },
+			{ label: "Feb", y: 302.25 },
+			{ label: "March", y: 157.20 },
+			{ label: "April", y: 148.77 },
+			{ label: "May", y: 101.50 },
+			{ label: "June", y: 97.8 }
+		]
+	},
+	{
+		type: "column",	
+		name: "Expenses",
+		legendText: "Expenses",
+		axisYType: "secondary",
+		showInLegend: true,
+		dataPoints:[
+			{ label: "Jan", y: 10.46 },
+			{ label: "Feb", y: 2.27 },
+			{ label: "March", y: 3.99 },
+			{ label: "April", y: 4.45 },
+			{ label: "May", y: 2.92 },
+			{ label: "June", y: 3.1 }
+		]
+	}]
+});
+chart.render();
+
+function toggleDataSeries(e) {
+	if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+		e.dataSeries.visible = false;
+	}
+	else {
+		e.dataSeries.visible = true;
+	}
+	chart.render();
+}
+
+}
+</script>
+</head>
+<body style="background-color: blue">
+<div id="chartContainer" style="height: 370px; width: 1000px; margin: auto"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>
+	</div>
   </body>
 </html>

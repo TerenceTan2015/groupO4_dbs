@@ -13,7 +13,7 @@ class App extends Component {
 		</div>
 		
 		<div className="container">
-		<CustomizableApps displaytext="Customizable apps here"/>
+		<CustomizableApps displaytext=""/>
 		</div>
 		
 		<div className="container">
