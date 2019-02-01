@@ -35,7 +35,7 @@ public class Account {
     }
 
     public void setAccountId(int accountId) {
-	this.accountId = accountId;
+	    this.accountId = accountId;
     }
 
     public String getType() {
@@ -66,7 +66,7 @@ public class Account {
 	return cardNumber;
     }
 
-    public void setAccountNumber(int cardNumber) {
+    public void setCardNumber(int cardNumber) {
 	this.cardNumber = cardNumber;
     }
 }

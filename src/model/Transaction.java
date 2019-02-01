@@ -14,6 +14,7 @@ public class Transaction {
     private double amount;
     private String tag;
     private String refNum;
+    private String accountNumber;
 
     public Transaction() {
     }

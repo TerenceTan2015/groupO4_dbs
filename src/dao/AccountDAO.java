@@ -25,7 +25,7 @@ public class AccountDAO {
 
         try {
             // Retrieve results from DB
-            url = new URL("https://techtrek-api-gateway.cfapps.io/accounts/deposit/");
+            url = new URL("https://techtrek-api-gateway.cfapps.io/accounts/deposit");
 //            url = new URL("http://159.65.23.28:5000/selectAllMS");
             con = (HttpURLConnection) url.openConnection();
             con.setDoOutput(true);
@@ -64,10 +64,10 @@ public class AccountDAO {
                     JsonElement displayName = resultInfo.get("displayName");
                     JsonElement accountNumber = resultInfo.get("accountNumber");
 
-                    r.setAccountId(accountId.getAsString());
+                    r.setAccountId(accountId.getAsInt());
                     r.setType(type.getAsString());
                     r.setDisplayName(displayName.getAsString());
-                    r.setAccountNumber(accountNumber.getAsString());
+                    r.setAccountNumber(accountNumber.getAsInt());
 
                     results.add(r);
                 }
