@@ -8,6 +8,8 @@
   <component name="ChangeListManager">
     <list default="true" id="dcf08e5d-5315-4b07-a073-e5114fdada96" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/groupO4_dbs.iml" afterPath="$PROJECT_DIR$/groupO4_dbs.iml" />
+      <change beforePath="$PROJECT_DIR$/src/dao/AccountDAO.java" afterPath="$PROJECT_DIR$/src/dao/AccountDAO.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,7 +25,7 @@
         <entry file="file://$PROJECT_DIR$/src/dao/CustomerDAO.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="114">
-              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -33,7 +35,7 @@
         <entry file="file://$PROJECT_DIR$/src/model/Customer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="114">
-              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding>
                 <element signature="e#467#468#0" expanded="true" />
                 <element signature="e#494#495#0" expanded="true" />
@@ -59,9 +61,11 @@
       <file leaf-file-name="AccountDAO.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/dao/AccountDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="4" column="33" lean-forward="true" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-              <folding />
+            <state relative-caret-position="-2736">
+              <caret line="6" column="34" lean-forward="true" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+              <folding>
+                <element signature="e#448#457#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -97,7 +101,7 @@
         <entry file="file://$PROJECT_DIR$/src/model/Transaction.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-228">
-              <caret line="9" column="33" lean-forward="true" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+              <caret line="9" column="33" lean-forward="false" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
               <folding>
                 <element signature="e#536#537#0" expanded="true" />
                 <element signature="e#566#567#0" expanded="true" />
@@ -231,6 +235,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib/gson-2.3.jar!/" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -417,15 +422,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1548988749590</updated>
-      <workItem from="1548988753873" duration="3514000" />
+      <workItem from="1548988753873" duration="4247000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3514000" />
+    <option name="totallyTimeSpent" value="4247000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-14" y="-14" width="3228" height="1736" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -473,7 +479,7 @@
     <entry file="file://$PROJECT_DIR$/src/dao/CustomerDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -481,7 +487,7 @@
     <entry file="file://$PROJECT_DIR$/src/model/Customer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
             <element signature="e#467#468#0" expanded="true" />
             <element signature="e#494#495#0" expanded="true" />
@@ -506,7 +512,7 @@
     <entry file="file://$PROJECT_DIR$/src/model/Transaction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-228">
-          <caret line="9" column="33" lean-forward="true" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+          <caret line="9" column="33" lean-forward="false" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
           <folding>
             <element signature="e#536#537#0" expanded="true" />
             <element signature="e#566#567#0" expanded="true" />
@@ -559,9 +565,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/AccountDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="4" column="33" lean-forward="true" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-          <folding />
+        <state relative-caret-position="-2736">
+          <caret line="6" column="34" lean-forward="true" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+          <folding>
+            <element signature="e#448#457#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -643,6 +651,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>gson-2.3</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
