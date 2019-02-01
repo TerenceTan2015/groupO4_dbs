@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: blue;
+  background-color: black;
   
 }
 
@@ -36,11 +36,12 @@
   margin: auto;
   background-color: white;
   width: 1000px;
+  padding-bottom: 15px;
 }
 
 .icon-bar {
   width: 100%; /* Full-width */
-  background-color: #b0e0e6; /* Dark-grey background */
+  background-color: white; /* Dark-grey background */
   overflow: auto; /* Overflow due to float */
 }
 
@@ -55,7 +56,7 @@
 }
 
 .icon-bar a:hover {
-  background-color: white; /* Add a hover color */
+  background-color: red; /* Add a hover color */
 }
 
 .active {

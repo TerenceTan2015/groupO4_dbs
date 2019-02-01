@@ -1,19 +1,27 @@
 import React, {Component} from 'react';
+import qr from './qr-icon.JPG';
+import autodebit from './autodebit-icon.JPG';
+import question from './question-icon.JPG';
+import transfer from './transfer-icon.JPG';
+import add from './add-icon.jpg';
+
 export default class CustomizableApps extends Component {
 constructor(props) {
     super(props)
   }
 render() {
     return (<div className="comptext">
-    <h3>Customizable apps</h3>
+    <h3>Favourites</h3>
       {this.props.displaytext}
 	  <div class="icon-bar">
-  <a class="active" href="#"><i class="fa fa-home"></i></a> 
-  <a href="#"><i class="fa fa-search"></i></a> 
-  <a href="#"><i class="fa fa-envelope"></i></a> 
-  <a href="#"><i class="fa fa-globe"></i></a>
-  <a href="#"><i class="fa fa-trash"></i></a> 
+<a class="active" href="#"><img src={qr} width="50" height="50"></img></a> 
+<a href="#"><img src={question} width="50" height="50"></img></a> 
+  <a href="#"><img src={autodebit} width="50" height="50"></img></a> 
+  <a href="#"><img src={transfer} width="50" height="50"></img></a>
+  <a href="#"><img src={add} width="50" height="50"></img></a> 
 </div>
-    </div>)
+
+    </div>
+	)
   }
 }
