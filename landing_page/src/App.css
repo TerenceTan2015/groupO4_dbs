@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: blue;
 }
 
 .App-logo {
@@ -23,13 +24,17 @@
 }
 
 .center-div {
-  position: absolute;
   margin: auto;
   top: 75px;
   right: 0;
   left: 0;
   width: 400px;
   height: 100px;
+}
+.container {
+  margin: auto;
+  background-color: white;
+  width: 1000px;
 }
 
 @keyframes App-logo-spin {
